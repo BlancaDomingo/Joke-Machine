@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Slackey&display=swap" rel="stylesheet">
+    <title>Programming Joke Machine</title>
+    <style>
+        body {
+            background-color: mistyrose;
+            color: maroon;
+            padding: 5em;
+            font-family: 'Noto Sans Mono', monospace;
+            font-weight: bold;
+        }
+
+        h1,
+        h3 {
+            font-family: 'Slackey', cursive;
+            ;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        main {
+            margin: 0 auto;
+            padding: 2em .5em .5em 2em;
+            background-color: orange;
+            border-radius: 0px 50px;
+            max-width: 40em;
+
+        }
+
+        section {
+            background-color: lightpink;
+            border-radius: 0px 40px;
+            padding: 1em;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .output {
+            margin-top: 2em;
+            padding: 1em;
+            min-height: 7em;
+            background-color: darksalmon;
+            border-radius: 0px 40px;
+        }
+
+        button {
+            font-size: 1.8em;
+            padding: 0.3em 0.9em;
+            background-color: mistyrose;
+            border-color: peru;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1>Programming Joke Machine</h1>
+            <form action="submit" method="get" id="submit-form">
+
+                <div>
+                    <h3>Select Language</h3>
+                    <label for="idDe">Deutsch</label>
+                    <input type="radio" name="Payment" id="idDe" value="de">
+                    <label for="idEn">English</label>
+                    <input type="radio" name="Payment" id="idEn" value="en">
+                    <label for="idEs">Español</label>
+                    <input type="radio" name="Payment" id="idEs" value="es">
+                </div>
+                <button type="submit">😂</button>
+
+            </form>
+            <div class="output"></div>
+        </section>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
