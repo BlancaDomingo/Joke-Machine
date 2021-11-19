@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Slackey&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <title>Programming Joke Machine</title>
     <style>
         body {
@@ -49,19 +50,22 @@
             justify-content: space-evenly;
         }
 
-        .output {
+        .divOutput {
             margin-top: 2em;
             padding: 1em;
             min-height: 7em;
             background-color: darksalmon;
             border-radius: 0px 40px;
         }
+        .output2 {
+            margin-top: 1em;
+        }
 
         button {
             font-size: 1.8em;
-            padding: 0.3em 0.9em;
+            padding: 0.3em 1.2em;
             background-color: mistyrose;
-            border-color: peru;
+            border-color: darksalmon;
             border-radius: 5px;
             margin-top: 1em;
         }
@@ -78,16 +82,19 @@
                 <div>
                     <h3>Select Language</h3>
                     <label for="idDe">Deutsch</label>
-                    <input type="radio" name="Payment" id="idDe" value="de">
+                    <input type="radio" name="language" id="idDe" value="de">
                     <label for="idEn">English</label>
-                    <input type="radio" name="Payment" id="idEn" value="en">
+                    <input type="radio" name="language" id="idEn" value="en">
                     <label for="idEs">Español</label>
-                    <input type="radio" name="Payment" id="idEs" value="es">
+                    <input type="radio" name="language" id="idEs" value="es">
                 </div>
                 <button type="submit">😂</button>
 
             </form>
-            <div class="output"></div>
+            <div class="divOutput">
+                <div class="output"></div>
+                <div class="output2"></div>
+            </div>
         </section>
     </main>
 
