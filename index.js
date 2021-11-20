@@ -32,9 +32,9 @@ form.addEventListener('submit', (event => event.preventDefault(getJoke())));
 
 btn.addEventListener('mouseenter', () => {
     btn.innerHTML = '🤣';
-    btn.style.backgroundColor = 'white';
+    // btn.style.backgroundColor = 'white';
 })
 btn.addEventListener('mouseleave', () => {
     btn.innerHTML = '😂';
-    btn.style.backgroundColor = 'mistyrose';
+    // btn.style.backgroundColor = 'mistyrose';
 })
